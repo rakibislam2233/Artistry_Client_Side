@@ -1,0 +1,83 @@
+[
+    {
+      "instructorName": "Sarah Johnson",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "sarah.johnson@example.com",
+      "instructorPhoneNumber": "+1234567890",
+      "numberOfCourses": 4,
+      "instructorAbout": "Sarah Johnson is a passionate instructor who specializes in biology and environmental science."
+    },
+    {
+      "instructorName": "Michael Williams",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "michael.williams@example.com",
+      "instructorPhoneNumber": "+1987654321",
+      "numberOfCourses": 6,
+      "instructorAbout": "Michael Williams has a background in physics and loves to make complex concepts easy to understand."
+    },
+    {
+      "instructorName": "Emily Davis",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "emily.davis@example.com",
+      "instructorPhoneNumber": "+1122334455",
+      "numberOfCourses": 3,
+      "instructorAbout": "Emily Davis is an art instructor with a flair for creativity and a passion for helping students express themselves through art."
+    },
+    {
+      "instructorName": "David Brown",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "david.brown@example.com",
+      "instructorPhoneNumber": "+1555666777",
+      "numberOfCourses": 5,
+      "instructorAbout": "David Brown is a mathematics guru who enjoys challenging students with intriguing math problems."
+    },
+    {
+      "instructorName": "Jennifer Lee",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "jennifer.lee@example.com",
+      "instructorPhoneNumber": "+1444333222",
+      "numberOfCourses": 7,
+      "instructorAbout": "Jennifer Lee is a language arts instructor who believes in the power of storytelling and effective communication."
+    },
+    {
+      "instructorName": "Robert Clark",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "robert.clark@example.com",
+      "instructorPhoneNumber": "+1888777666",
+      "numberOfCourses": 4,
+      "instructorAbout": "Robert Clark is a history enthusiast who enjoys bringing the past to life in his lessons."
+    },
+    {
+      "instructorName": "Amy Rodriguez",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "amy.rodriguez@example.com",
+      "instructorPhoneNumber": "+1666555444",
+      "numberOfCourses": 2,
+      "instructorAbout": "Amy Rodriguez is a music instructor with a talent for both playing and teaching various instruments."
+    },
+    {
+      "instructorName": "Kevin Smith",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "kevin.smith@example.com",
+      "instructorPhoneNumber": "+1999888777",
+      "numberOfCourses": 8,
+      "instructorAbout": "Kevin Smith is a computer science instructor who loves exploring new technologies and programming languages."
+    },
+    {
+      "instructorName": "Laura Taylor",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "laura.taylor@example.com",
+      "instructorPhoneNumber": "+1888222333",
+      "numberOfCourses": 3,
+      "instructorAbout": "Laura Taylor is a physical education instructor who believes in the importance of a healthy and active lifestyle."
+    },
+    {
+      "instructorName": "Daniel Harris",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "instructorEmail": "daniel.harris@example.com",
+      "instructorPhoneNumber": "+1777666555",
+      "numberOfCourses": 6,
+      "instructorAbout": "Daniel Harris is a chemistry instructor with a knack for conducting engaging and informative experiments."
+    }
+  ]
+  

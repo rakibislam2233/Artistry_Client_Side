@@ -1,0 +1,111 @@
+[
+    {
+      "courseTitle": "Introduction to Sketching",
+      "courseImage": "https://i.ibb.co/pWW21Q8/Sketching1.jpg",
+      "instructorName": "Emma Davis",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 29.99,
+      "courseDuration": "4 weeks",
+      "rating": 4.8,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Watercolor Painting Techniques",
+      "courseImage": "https://i.ibb.co/QrrzJTh/Watercolor.jpg",
+      "instructorName": "Michael Johnson",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 39.99,
+      "courseDuration": "6 weeks",
+      "rating": 4.7,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Digital Art Fundamentals",
+      "courseImage": "https://i.ibb.co/nM71Lx8/Digital-Art.jpg",
+      "instructorName": "Sarah Smith",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 49.99,
+      "courseDuration": "8 weeks",
+      "rating": 4.9,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Charcoal Drawing Mastery",
+      "courseImage": "https://i.ibb.co/jzVZ4RM/Charcoal.webp",
+      "instructorName": "John Doe",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 34.99,
+      "courseDuration": "5 weeks",
+      "rating": 4.5,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Acrylic Painting Workshop",
+      "courseImage": "https://i.ibb.co/QfRmQrM/Acrylic.jpg",
+      "instructorName": "Emily Martin",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 59.99,
+      "courseDuration": "7 weeks",
+      "rating": 4.6,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Pen and Ink Illustration",
+      "courseImage": "https://i.ibb.co/NCVzCq0/Pen.png",
+      "instructorName": "David Lee",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 24.99,
+      "courseDuration": "3 weeks",
+      "rating": 4.2,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Portrait Drawing Workshop",
+      "courseImage": "https://i.ibb.co/jZGwv2C/Portrait.jpg",
+      "instructorName": "Jessica Turner",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 44.99,
+      "courseDuration": "6 weeks",
+      "rating": 4.8,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Collage Art Techniques",
+      "courseImage": "https://i.ibb.co/4pCZHDY/Collage.jpg",
+      "instructorName": "Alex Martin",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 29.99,
+      "courseDuration": "4 weeks",
+      "rating": 4.3,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Street Art and Graffiti",
+      "courseImage": "https://i.ibb.co/Yt9Nsxt/Street.jpg",
+      "instructorName": "Laura Williams",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 54.99,
+      "courseDuration": "5 weeks",
+      "rating": 4.7,
+      "role": "instructor"
+    },
+    {
+      "courseTitle": "Landscapes in Pastel",
+      "courseImage": "https://i.ibb.co/qxWqCKX/Landscapes.jpg",
+      "instructorName": "Bob Johnson",
+      "instructorImage": "https://i.ibb.co/7NL2zCk/man.jpg",
+      "coursePrice": 39.99,
+      "courseDuration": "6 weeks",
+      "rating": 4.4,
+      "role": "instructor"
+    }
+  ]
+  
+ 
+ 
+
+
+
+  
+
+  
