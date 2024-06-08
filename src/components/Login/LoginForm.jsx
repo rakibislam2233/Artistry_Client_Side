@@ -23,7 +23,7 @@ const LoginForm = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    setLoading(true)
+    setLoading(true);
     const { email, password } = data;
     login(email, password)
       .then((result) => {
@@ -34,7 +34,10 @@ const LoginForm = () => {
           navigate(from, { replace: true });
         }
       })
-      .catch((err) => alert(err.message));
+      .catch((err) => {
+        setLoading(false);
+        toast.error(err.message);
+      });
   };
   const handleGoogle = () => {
     googleLogin()
@@ -47,7 +50,10 @@ const LoginForm = () => {
             imageUrl: user?.photoURL,
           };
           axios
-            .put(`https://artistryserverside-production.up.railway.app/user/${user?.email}`, userInfo)
+            .put(
+              `https://artistry-server-side.vercel.app/user/${user?.email}`,
+              userInfo
+            )
             .then((res) => {
               if (res) {
                 toast.success(`Welcome to ${user?.displayName}`);
@@ -122,7 +128,13 @@ const LoginForm = () => {
         </div>
         <div className="py-3">
           <button className="w-full py-2 px-7  bg-gradient-to-r from-[#1DC1B3] to-green-500 rounded font-semibold  text-white">
-            {loading ? <span className="flex justify-center text-center"><ImSpinner6 className="w-6 h-6 animate-spin"/> Loading..</span> : "Login"}
+            {loading ? (
+              <span className="flex justify-center text-center">
+                <ImSpinner6 className="w-6 h-6 animate-spin" /> Loading..
+              </span>
+            ) : (
+              "Login"
+            )}
           </button>
         </div>
         <div className="flex gap-2 justify-center items-center">

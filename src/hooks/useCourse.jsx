@@ -9,7 +9,7 @@ const useCourse = () => {
   } = useQuery({
     queryKey: ["courses"],
     queryFn: async () => {
-      const res = await axios(`https://artistryserverside-production.up.railway.app/allCourse`);
+      const res = await axios(`https://artistry-server-side.vercel.app/allCourse`);
       return res.data;
     },
   });

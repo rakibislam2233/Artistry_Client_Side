@@ -11,7 +11,7 @@ const ManageCourse = () => {
   const [courses, isLoading, refetch] = useCourse();
   const filterCourses = courses?.filter(course => course.status !== "deny")
   const courseApproved = (id) => {
-    axios.patch(`https://artistryserverside-production.up.railway.app/courseApproved/${id}`).then((res) => {
+    axios.patch(`https://artistry-server-side.vercel.app/courseApproved/${id}`).then((res) => {
       if (res.data.modifiedCount > 0) {
         refetch();
         Swal.fire({
@@ -37,7 +37,7 @@ const ManageCourse = () => {
     const form = e.target;
     const message = form.message.value;
      const feedback ={message}
-    axios.post(`https://artistryserverside-production.up.railway.app/courseDeny/${denyId}`,feedback)
+    axios.post(`https://artistry-server-side.vercel.app/courseDeny/${denyId}`,feedback)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           refetch();

@@ -41,7 +41,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       setLoading(false);
       if(currentUser){
-        axios.post('https://artistryserverside-production.up.railway.app/jwt',{email:currentUser?.email})
+        axios.post('https://artistry-server-side.vercel.app/jwt',{email:currentUser?.email})
         .then(data=>{
           localStorage.setItem('jwt_token',data.data);
           setLoading(false);

@@ -9,7 +9,7 @@ const useTestimonial = () => {
   } = useQuery({
     queryKey: ["testimonials"],
     queryFn: async () => {
-      const res = await axios(`https://artistryserverside-production.up.railway.app/allTestimonial`);
+      const res = await axios(`https://artistry-server-side.vercel.app/allTestimonial`);
       return res.data;
     },
   });

@@ -26,7 +26,7 @@ const SelectedCourse = () => {
       .then((result) => {
         if (result.isConfirmed) {
           axios
-            .delete(`https://artistryserverside-production.up.railway.app/deleteAddToCartCourse/${id}`)
+            .delete(`https://artistry-server-side.vercel.app/deleteAddToCartCourse/${id}`)
             .then((res) => {
               if (res.data.deletedCount > 0) {
                 refetch();

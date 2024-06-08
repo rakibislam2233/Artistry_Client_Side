@@ -15,7 +15,7 @@ const useCart = () => {
     queryKey: ["cart",user?.email],
     enabled: user?.email !== '' || loading,
     queryFn: async () => {
-      const res = await axios.get(`https://artistryserverside-production.up.railway.app/getAddToCartCourse/${user?.email}`,{
+      const res = await axios.get(`https://artistry-server-side.vercel.app/getAddToCartCourse/${user?.email}`,{
         headers:{
           authorization: `Bearer ${token}`
         }

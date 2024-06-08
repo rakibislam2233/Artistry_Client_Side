@@ -23,7 +23,7 @@ const Sidebar = ({ isAdmin, isInstructor,refetch }) => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.patch(`https://artistryserverside-production.up.railway.app/instructor/${user?.email}`).then((res) => {
+        axios.patch(`https://artistry-server-side.vercel.app/instructor/${user?.email}`).then((res) => {
           if (res.data.modifiedCount > 0) {
             refetch()
             Swal.fire({
@@ -39,7 +39,7 @@ const Sidebar = ({ isAdmin, isInstructor,refetch }) => {
     });
   };
   return (
-    <div className="w-full   flex flex-col px-5  gap-8 py-4 ">
+    <div className="w-full  flex flex-col px-5  gap-8 py-4 ">
       <div className="px-5 pt-10 flex gap-4 items-center">
         <img
           className="w-14 h-14 rounded-full ring-4 ring-green-500"

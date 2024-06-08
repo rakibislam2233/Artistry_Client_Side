@@ -2,16 +2,16 @@ import axios from "axios";
 import { updateProfile } from "firebase/auth";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { FiFacebook } from "react-icons/fi";
 import { ImSpinner6 } from "react-icons/im";
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../Provider/AuthProvider";
-import toast from "react-hot-toast";
 
 const RegisterForm = () => {
-  const { createNewUser,googleLogin} = useContext(UserContext);
+  const { createNewUser, googleLogin } = useContext(UserContext);
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(true);
   const [error, setError] = useState(false);
@@ -51,7 +51,7 @@ const RegisterForm = () => {
               displayName: fullName,
               photoURL: imageUrl,
             })
-              .then((res) => {
+              .then(() => {
                 const userInfo = {
                   fullName,
                   email,
@@ -61,7 +61,10 @@ const RegisterForm = () => {
                   role: "student",
                 };
                 axios
-                  .put(`https://artistryserverside-production.up.railway.app/user/${user?.email}`, userInfo)
+                  .put(
+                    `https://artistry-server-side.vercel.app/user/${user?.email}`,
+                    userInfo
+                  )
                   .then((res) => {
                     if (res.data.upsertedId) {
                       setLoading(false);
@@ -74,10 +77,14 @@ const RegisterForm = () => {
                     toast.error(err.message);
                   });
               })
-              .catch((err) => toast.error(err.message));
+              .catch((err) => {
+                setLoading(false);
+                toast.error(err.message);
+              });
           })
           .catch((err) => {
-
+            setLoading(false);
+            toast.error(err.message);
           });
       })
       .catch((err) => alert(err.message));
@@ -93,7 +100,10 @@ const RegisterForm = () => {
             imageUrl: user?.photoURL,
           };
           axios
-            .put(`https://artistryserverside-production.up.railway.app/user/${user?.email}`, userInfo)
+            .put(
+              `https://artistry-server-side.vercel.app/user/${user?.email}`,
+              userInfo
+            )
             .then((res) => {
               if (res) {
                 toast.success(`Welcome to ${user?.displayName}`);
@@ -265,7 +275,7 @@ const RegisterForm = () => {
       <div className="flex justify-center items-center gap-3">
         <div
           title="Google"
-          onClick={()=>handleGoogle()}
+          onClick={() => handleGoogle()}
           className="w-10 h-10 border border-gray-700 rounded-full flex justify-center items-center bg-gradient-to-r from-[#1DC1B3] to-green-500 cursor-pointer"
         >
           <AiOutlineGoogle className="w-5 h-5" />

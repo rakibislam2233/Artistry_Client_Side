@@ -1,5 +1,5 @@
 import { FaOpencart } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAdmin from "../../../hooks/useAdmin";
 import useAuth from "../../../hooks/useAuth";
 import useCart from "../../../hooks/useCart";
@@ -7,6 +7,33 @@ import useInstructor from "../../../hooks/useInstructor";
 import Button from "../Button";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { useState } from "react";
+
+const nav = [
+  {
+    path: "/",
+    title: "Home",
+  },
+  {
+    path: "/about",
+    title: "About",
+  },
+  {
+    path: "/instructors",
+    title: "Instructors",
+  },
+  {
+    path: "/course",
+    title: "Courses",
+  },
+  {
+    path: "/blogs",
+    title: "Blog",
+  },
+  {
+    path: "/contact",
+    title: "Contact",
+  },
+];
 
 const WebNavlink = () => {
   const [show, setShow] = useState(false);
@@ -23,36 +50,16 @@ const WebNavlink = () => {
           show ? "top-[80px] space-y-1 left-0 " : "top-[80px]  left-[-700px]"
         }`}
       >
-        <li onClick={() => setShow(false)}>
-          <Link className="hover:text-green-500 " to={"/"}>
-            Home
-          </Link>
-        </li>
-        <li onClick={() => setShow(false)}>
-          <Link className="hover:text-green-500" to={"/about"}>
-            About
-          </Link>
-        </li>
-        <li onClick={() => setShow(false)}>
-          <Link className="hover:text-green-500" to={"/instructors"}>
-            Instructors
-          </Link>
-        </li>
-        <li onClick={() => setShow(false)}>
-          <Link className="hover:text-green-500" to={"/course"}>
-            Course
-          </Link>
-        </li>
-        <li onClick={() => setShow(false)}>
-          <Link className="hover:text-green-500" to={"/blogs"}>
-            Blogs
-          </Link>
-        </li>
-        <li onClick={() => setShow(false)}>
-          <Link className="hover:text-green-500" to={"/contact"}>
-            Contact
-          </Link>
-        </li>
+        {nav.map(({ path, title }) => (
+          <li key={path} onClick={() => setShow(false)}>
+            <NavLink
+              className={({ isActive }) => (isActive ? "text-emerald-500 border-b border-emerald-500" : "")}
+              to={path}
+            >
+              {title}
+            </NavLink>
+          </li>
+        ))}
         {isAdmin || isInstructor || !user ? (
           ""
         ) : (

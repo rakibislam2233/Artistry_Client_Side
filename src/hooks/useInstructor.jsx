@@ -12,7 +12,7 @@ const useInstructor = () => {
     queryKey: ["isInstructor", user?.email],
     enabled: user?.email !== "",
     queryFn: async () => {
-      const res = await axios(`https://artistryserverside-production.up.railway.app/isInstructor/${user?.email}`);
+      const res = await axios(`https://artistry-server-side.vercel.app/isInstructor/${user?.email}`);
       return res.data.instructor;
     },
   });

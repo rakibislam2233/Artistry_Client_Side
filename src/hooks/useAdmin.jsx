@@ -12,7 +12,7 @@ const useAdmin = () => {
     queryKey: ["isAdmin", user?.email],
     enabled: user?.email !== "",
     queryFn: async () => {
-      const res = await axios(`https://artistryserverside-production.up.railway.app/isAdmin/${user?.email}`);
+      const res = await axios(`https://artistry-server-side.vercel.app/isAdmin/${user?.email}`);
       return res.data.admin;
     },
   });

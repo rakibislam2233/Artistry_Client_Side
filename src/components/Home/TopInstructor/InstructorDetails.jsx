@@ -10,18 +10,18 @@ const InstructorDetails = ({ instructor }) => {
     <div className="rounded-xl h-full border border-gray-700  shadow-xl">
       <div className="overflow-hidden rounded-t-xl">
         <img
-          className="w-full h-56 rounded-t hover:scale-125 transition-all duration-300"
+          className="w-full h-48 rounded-t hover:scale-125 transition-all duration-300"
           src={imageUrl}
           alt=""
         />
       </div>
-      <div className="px-5 pt-5 pb-5  text-center">
+      <div className="px-5 py-2  text-center">
         <div className="space-y-2">
           <h3 className="text-xl font-semibold">{fullName}</h3>
           <button className="btn btn-xs bg-green-500 border-none text-white">Instructor</button>
           {numberOfCourses && (
             <h1 className="flex justify-center items-center gap-2">
-              <BsBook className="text-green-500 w-5 h-5" /> Course :{" "}
+              <BsBook className="text-green-500 w-5 h-5" /> Course :
               {numberOfCourses}
             </h1>
           )}
@@ -38,7 +38,7 @@ const InstructorDetails = ({ instructor }) => {
               </button>
             </div>
         </div>
-        <div className="flex justify-center items-center py-5">
+        <div className="flex justify-center items-center py-3">
           <Link to={`/instructor-details/${_id}`}>
             <Button title={"See More"} />
           </Link>

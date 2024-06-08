@@ -8,7 +8,7 @@ const useUsers = () => {
   } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const res = await axios(`https://artistryserverside-production.up.railway.app/allUsers`);
+      const res = await axios(`https://artistry-server-side.vercel.app/allUsers`);
       return res.data;
     },
   });

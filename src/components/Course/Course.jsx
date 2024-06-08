@@ -36,7 +36,7 @@ const Course = () => {
   );
   return (
     <div className="w-full py-10 px-5 md:px-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {slicedData?.map((course, i) => (
           <CourseDetails course={course} key={i + 1} />
         ))}

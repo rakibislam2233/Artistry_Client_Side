@@ -25,7 +25,7 @@ const SingleInstructor = () => {
     enabled: singleInstructor?.email !== "",
     queryFn: async () => {
       const res = await axios(
-        `https://artistryserverside-production.up.railway.app/allCourse/${singleInstructor?.email}`
+        `https://artistry-server-side.vercel.app/allCourse/${singleInstructor?.email}`
       );
       return res.data;
     },
@@ -34,7 +34,7 @@ const SingleInstructor = () => {
     window.scrollTo(0, 0);
   }, [id]);
   useEffect(() => {
-    axios(`https://artistryserverside-production.up.railway.app/singleInstructor/${id}`).then((res) => {
+    axios(`https://artistry-server-side.vercel.app/singleInstructor/${id}`).then((res) => {
       setLoading(false);
       setSingleInstructor(res.data);
     });
@@ -43,7 +43,7 @@ const SingleInstructor = () => {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -52,7 +52,7 @@ const SingleInstructor = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -151,7 +151,7 @@ const SingleInstructor = () => {
           )}
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 px-5 md:px-10">
         <h3 className="text-3xl font-semibold">Other Instructor</h3>
         <Slider className="py-5" {...settings}>
           {instructors?.map((instructor, i) => (

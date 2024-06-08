@@ -28,7 +28,7 @@ const CourseDetails = ({ course }) => {
   return (
     <div className="rounded-xl h-full border border-gray-800">
         <div className="overflow-hidden rounded-t-xl">
-          <img className="w-full h-56 rounded-t hover:scale-125 transition-all duration-300" src={courseImage} alt="" />
+          <img className="w-full h-48 rounded-t hover:scale-125 transition-all duration-300" src={courseImage} alt="" />
         </div>
       <div className="px-5 pt-5 pb-5 space-y-3">
         <div className="flex justify-between items-center gap-5">

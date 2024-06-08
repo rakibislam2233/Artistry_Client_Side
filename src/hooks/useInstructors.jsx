@@ -9,7 +9,7 @@ const useInstructors = () => {
   } = useQuery({
     queryKey: ["instructors"],
     queryFn: async () => {
-      const res = await axios(`https://artistryserverside-production.up.railway.app/allInstructor`);
+      const res = await axios(`https://artistry-server-side.vercel.app/allInstructor`);
       return res.data;
     },
   });

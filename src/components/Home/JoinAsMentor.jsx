@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import animation from "../../assets/Lottie/Animation - 1697703233634.json";
 import Button from "../Shared/Button";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import useAdmin from "../../hooks/useAdmin";
 import useInstructor from "../../hooks/useInstructor";
 import toast from "react-hot-toast";
@@ -11,6 +11,7 @@ const JoinAsMentor = () => {
   const {user} = useAuth()
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor();
+  const location = useLocation()
   const navigate = useNavigate()
   const handleClick = () => {
     if (user) {

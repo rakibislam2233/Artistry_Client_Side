@@ -34,7 +34,7 @@ const SingleCourse = () => {
     window.scrollTo(0, 0);
   }, [id]);
   useEffect(() => {
-    axios(`https://artistryserverside-production.up.railway.app/singleCourse/${id}`).then((res) => {
+    axios(`https://artistry-server-side.vercel.app/singleCourse/${id}`).then((res) => {
       setIsLoading(false);
       setsingleCourse(res.data);
     });
@@ -47,7 +47,7 @@ const SingleCourse = () => {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -56,7 +56,7 @@ const SingleCourse = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -118,7 +118,7 @@ const SingleCourse = () => {
         role,
       };
       axios
-        .post(`https://artistryserverside-production.up.railway.app/addToCart`, addToCartInfo)
+        .post(`https://artistry-server-side.vercel.app/addToCart`, addToCartInfo)
         .then((res) => {
           if (res.data.insertedId) {
             toast.success("Add to cart successfully");
@@ -267,7 +267,7 @@ const SingleCourse = () => {
             </div>
           </div>
         </div>
-        <div className="py-10">
+        <div className="py-10 px-5 md:px-10">
           <h3 className="text-2xl font-semibold">Related Courses</h3>
           <Slider className="py-5" {...settings}>
             {approvedCourses?.slice(0, 10).map((course, i) => (

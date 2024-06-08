@@ -36,7 +36,7 @@ const MyCourse = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://artistryserverside-production.up.railway.app/deleteCourse/${id}`).then((res) => {
+        axios.delete(`https://artistry-server-side.vercel.app/deleteCourse/${id}`).then((res) => {
           if (res) {
             refetch();
             Swal.fire("Deleted!", "Your course has been deleted.", "success");
@@ -70,7 +70,7 @@ const MyCourse = () => {
       feedback: "",
     };
     axios
-      .put(`https://artistryserverside-production.up.railway.app/updateCourse/${updateId}`, updateCourseInfo)
+      .put(`https://artistry-server-side.vercel.app/updateCourse/${updateId}`, updateCourseInfo)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           refetch();

@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Nunito+Sans:opsz@6..12&family=Poppins&family=Roboto:ital@0;1&family=Viga&display=swap');
-body{
-    scroll-behavior: smooth;
+body {
+  font-family: "Fredoka", sans-serif;
+  scroll-behavior: smooth;
 }

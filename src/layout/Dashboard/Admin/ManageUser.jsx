@@ -17,7 +17,7 @@ const ManageUser = () => {
       confirmButtonText: "Yes,Make Admin",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.patch(`https://artistryserverside-production.up.railway.app/makeAdmin/${id}`).then((res) => {
+        axios.patch(`https://artistry-server-side.vercel.app/makeAdmin/${id}`).then((res) => {
           if (res.data.modifiedCount > 0) {
             refetch();
             Swal.fire({
@@ -44,7 +44,7 @@ const ManageUser = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .patch(`https://artistryserverside-production.up.railway.app/makeInstructor/${id}`)
+          .patch(`https://artistry-server-side.vercel.app/makeInstructor/${id}`)
           .then((res) => {
             if (res.data.modifiedCount > 0) {
               refetch();

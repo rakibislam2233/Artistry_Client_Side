@@ -7,13 +7,13 @@ import AuthProvider from "./Provider/AuthProvider";
 import { QueryClient, QueryClientProvider } from "react-query";
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
+  <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-      <div className="overflow-hidden bg-gray-950 text-white">
+        <div className="overflow-hidden bg-gray-950 text-white">
           <RouterProvider router={router} />
         </div>
       </AuthProvider>
     </QueryClientProvider>
-    </React.StrictMode>
+  </React.StrictMode>
 );

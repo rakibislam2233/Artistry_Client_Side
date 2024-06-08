@@ -31,7 +31,7 @@ const Instructor = () => {
   const slicedData = instructors?.slice(startIndex, startIndex + itemsPerPage);
   return (
     <div className="w-full py-10 px-5 md:px-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {slicedData?.map((instructor, i) => (
           <InstructorDetails key={i} instructor={instructor} />
         ))}

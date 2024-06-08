@@ -44,7 +44,7 @@ const AddCourse = () => {
       };
       axios
         .post(
-          `https://artistryserverside-production.up.railway.app/addedCourse`,
+          `https://artistry-server-side.vercel.app/addedCourse`,
           courseData
         )
         .then((res) => {
